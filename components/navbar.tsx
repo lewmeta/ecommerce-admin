@@ -6,9 +6,8 @@ import StoreSwitcher from "@/components/store-switcher"
 import { redirect } from 'next/navigation'
 import prismadb from '@/lib/prismadb'
 
-type Props = {}
 
-const Navbar = async (props: Props) => {
+const Navbar = async () => {
     const { userId } = auth();
 
     if (!userId) {
