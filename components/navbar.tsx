@@ -9,6 +9,7 @@ import { ModeToggle } from './theme-toggle'
 
 
 const Navbar = async () => {
+
     const { userId } = auth();
 
     if (!userId) {
