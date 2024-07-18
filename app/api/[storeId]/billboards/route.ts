@@ -7,6 +7,7 @@ export async function POST(
     { params }: { params: { storeId: string } }
 ) {
     try {
+
         const { userId } = auth();
         const body = await req.json();
 
